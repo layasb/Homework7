@@ -19,6 +19,9 @@ namespace homework7.Controllers
         {
             return View();
         }
-
+        public ActionResult AboutMe()
+        {
+            return View();
+        }
     }
 }

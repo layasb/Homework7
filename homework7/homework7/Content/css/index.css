@@ -1,0 +1,77 @@
+Body
+{
+    width:600px;
+    margin:0 auto 30px auto;
+}
+
+h1
+{
+    text-align: center;
+}
+hr
+{
+    height:8px;
+    background-color: #00FF00;
+}
+nav
+{
+    margin:2em;
+    text-align:right;
+}
+nav a
+{
+    margin:20px;
+}
+a:link
+{
+    text-decoration:none;
+}
+a:hover
+{
+    color:red;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+h2, h3
+{
+    text-align:center;
+    color:blue;
+}
+h3
+{
+    color: purple;
+}
+footer
+{
+    border-top: double;
+    padding-top: 5px;
+}
+footer p
+{
+    display:inline;
+    margin-right:20px;
+}
+form
+{
+    border:solid green;
+    padding: 10px;
+}
+.aboutMe
+{ 
+    text-align:left;
+    width:380px;
+}
+img
+{
+    width:200px;
+    height:200px;
+    float:right;
+}
+.left
+{
+    width:380px;
+}
+address
+{
+    display:inline;
+}
