@@ -1,0 +1,35 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "WebForm";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WebForm</title>
+</head>
+<body>
+    <header>
+        <h1>Salarbehzadi, Laya Homework 7</h1>
+        <hr />
+        <nav>
+            <a>@Html.ActionLink("Home", "Index")</a>
+            <a>@Html.ActionLink("Web Form Demo", "WebForm")</a>
+            <a>@Html.ActionLink("About Me", "AboutMe")</a>
+        </nav>
+    </header>
+    <h2>Welcome to my Web Form</h2>
+    <h3>A demo form for hotel room reservation</h3>
+
+    <footer>
+        <p> Laya Salarbehzadi &copy;</p>
+        <address>
+            <p><a href="mailto:layasb@yahoo.com">Email: layasb@yahoo.com</a></p>
+            <p>Phone: (310)800-4369</p>
+        </address>
+    </footer>
+</body>
+</html>
