@@ -3,27 +3,6 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    @section css {
-        <link href="@Url.Content("~/css/index.css")" rel="stylesheet" />
-    }
-</head>
-<body>
-    <header>
-        <h1>Salarbehzadi, Laya Homework 7</h1>
-        <hr />
-        <nav>
-            <a>@Html.ActionLink("Home", "Index")</a>
-            <a>@Html.ActionLink("Web Form Demo", "WebForm")</a>
-            <a>@Html.ActionLink("About Me", "AboutMe")</a> 
-        </nav>
-    </header>
     <h2>Welcome to my home page</h2>
     <h3>Please click a link to visit my other pages.</h3>
    <footer>
@@ -33,5 +12,3 @@
            <p>Phone: (310)800-4369</p>
        </address>
    </footer>
-</body>
-</html>

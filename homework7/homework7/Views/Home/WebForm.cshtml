@@ -13,13 +13,7 @@
 </head>
 <body>
     <header>
-        <h1>Salarbehzadi, Laya Homework 7</h1>
-        <hr />
-        <nav>
-            <a>@Html.ActionLink("Home", "Index")</a>
-            <a>@Html.ActionLink("Web Form Demo", "WebForm")</a>
-            <a>@Html.ActionLink("About Me", "AboutMe")</a>
-        </nav>
+       
     </header>
     <h2>Welcome to my Web Form</h2>
     <h3>A demo form for hotel room reservation</h3>
@@ -27,45 +21,46 @@
 {
     <fieldset>
         <legend>Customer Information</legend>
-        <label>Full name: <input type="text" name="name" id="info_name" placeholder="FirstName LastName" required="required" /></label>
         <br />
-        <label>Email: <input type="email" name="email" id="info_email" required="required" /></label>
+        @Html.Label("name","Full name: ") @Html.TextBox("name","", new { @id="info_name", @placeholder="FirstName LastName", @required="required" })
         <br />
-        <label>Phone: <input type="tel" name="phone" id="info_phone" required="required" /></label>
+        @Html.Label("email", "Email : ") @Html.TextBox("email", "", new { @type = "email", @id = "info_email", @required = "required" })
+       <br />
+        @Html.Label("phone", "Phone: ") @Html.TextBox("phone", "", new { @type = "tel", @id = "info_phone", @required = "required" })
         <br />
     </fieldset>
+    
     <fieldset>
 <legend>Room Information</legend>
-<label>Arrival date: <input type="date" name=" arivaldate" id="arrive_date" required="required" /></label>
-<br />
-    <label>Arrival time: <input type="time" name="arivaltime" id="arrive_time" required="required"/></label>
+        @Html.Label("arivaldate", "Arrival date: ") 
+        @Html.TextBox("arivaldate", "", new { @type = "date", @id = "arival_date", @required = "required" })
+        <br />
+        @Html.Label("arivaltime", "Arrival time: ") 
+        @Html.TextBox("arivaltime", "", new { @type = "time", @id = "arival_time", @required = "required" })
+        <br />
+        @Html.Label("roomType", "Select a room type: ") 
+        @Html.DropDownList("roomType", new List<SelectListItem>
+        {
+        new SelectListItem { Text = "Standard", Value = "standard",},
+        new SelectListItem { Text = "Economic", Value = "economic",},
+        new SelectListItem { Text = "Luxury", Value = "luxury", Selected = true}
+        }, "Select Room Type")
     <br />
-    
-    <label>Select a room type</label>
-    <select name="roomType">
-        
-        <option value="standard">Standard</option>
-        <option value="economic">Economic</option>
-        <option value="Luxury" selected="selected">Luxury</option>
-    </select>
-    
+        @Html.Label("numberNights", "Number of nights: ")
+        @Html.TextBox("numberNights", "", new { @type = "number", @min ="1", @max = "30", @step="1", @value="1", @required="required" })
     <br />
-    <label>Number of nights: <input type="number" min="1" max="30" step="1" value="1" required="required" /></label>
-    
-    
-   
-    <br />
-    
-    <label>Number of guests:  <input type="number" min="0" max="3" step="1" value="0" required="required" /></label>
+        @Html.Label("numberGuests", "Number of guests: ")
+        @Html.TextBox("numberGuests", "", new { @type = "number", @min = "1", @max = "3", @step = "1", @value = "0", @required = "required" })
    
 </fieldset>
         <fieldset>
             <legend>Other Information</legend>
-            <label>Promo Code:</label>
-            <input type="text" name="promoCode" pattern="[A-Za-z0-9]{4}"
-                title="No special characters!!!" id="prom-code" maxlength="4" /><br />
-            <label>Special Notes</label>
-            <textarea name="comments" cols="40" rows="4" placeholder="Enter your special notes here"></textarea>
+        @Html.Label("promo", "Promo Code: ")
+        @Html.TextBox("promo", "", new { @type = "text", pattern = "[A-Za-z0-9]{4}", @title="No special characters!!!", @id="prom-code", @maxlength="4"})
+    <br />
+        @Html.Label("comment", "Special Note: ")
+        @Html.TextArea("comment", "", new { @type = "text", @cols="40", @rows="4", @placeholder="Enter your special notes here" })
+            
         </fieldset>
         <input type="reset" name="reset" value="Clear Form" />
         <input type="submit" name="submit" value="Request Reservation" />

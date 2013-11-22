@@ -1,4 +1,4 @@
-Body
+body
 {
     width:600px;
     margin:0 auto 30px auto;
@@ -74,4 +74,8 @@ img
 address
 {
     display:inline;
+}
+.links 
+{
+     display:inline;
 }

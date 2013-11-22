@@ -4,17 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @RenderSection("css", false)
-
-
+    <link href="@Url.Content("~/css/index.css")" rel="stylesheet" />
 </head>
 <body>
-    <h1> </h1>
-    <ul>
-        <li>@Html.ActionLink("Home", "Index")</li>
-        <li>@Html.ActionLink("Web Form Demo", "WebForm")</li>
-        <li>@Html.ActionLink("About Me", "AboutMe")</li>
-    </ul>
+    <h1>Salarbehzadi, Laya Homework 7</h1>
+    <hr />
+    <nav>
+        <ul>
+            <li class="links">@Html.ActionLink("Home", "Index")</li>
+            <li class="links">@Html.ActionLink("Web Form Demo", "WebForm")</li>
+            <li class="links">@Html.ActionLink("About Me", "AboutMe")</liclass>
+        </ul>
+    </nav>
     <div>
         @RenderBody()
     </div>
