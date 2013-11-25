@@ -118,6 +118,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Images\myself.jpg" />
     <Content Include="Content\Images\self-portrat.jpg" />
     <Content Include="css\index.css" />
     <Content Include="Global.asax" />
