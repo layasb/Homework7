@@ -1,0 +1,70 @@
+body
+{
+    width:680px;
+    margin:0 auto;
+}
+header
+{
+    background-color:blue;
+    height:30px;
+    text-align:center;
+    
+    
+}
+nav
+{
+    background-color:green;
+    height:25px;
+}
+nav a
+{
+    display:inline;
+    margin-right:20px;
+}
+li
+{
+    display:inline;
+}
+article
+{
+    background-color:pink;
+    width:452px;
+    height:180px;
+    text-align:center;
+    
+    padding-bottom:10px;
+}
+section
+{
+
+    background-color:red;
+    margin-bottom:10px;
+
+    width:452px;
+    height:70px;
+}
+aside
+{
+    width:228px;
+    background-color:cyan;
+    height:190px;
+    text-align:center;
+    float:right;
+    
+    
+}
+footer
+{
+    background-color:green;
+    height:25px;
+    text-align:center;
+    clear:both;
+}
+#top
+{
+    margin-top:8px;
+}
+article, section
+{
+    float:left;
+}

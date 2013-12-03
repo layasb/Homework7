@@ -119,8 +119,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\myself.jpg" />
+    <Content Include="Content\Images\pete-blank.jpg" />
     <Content Include="Content\Images\self-portrat.jpg" />
+    <Content Include="css\absolute.css" />
+    <Content Include="css\float.css" />
     <Content Include="css\index.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\static.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -152,6 +157,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\AboutMe.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Task3.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Task4.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\AbsoluteLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\FloatLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\FormatPhoneNumber.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\StaticLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\textFormat.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
