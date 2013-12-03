@@ -7,17 +7,43 @@
     <link href="@Url.Content("~/css/index.css")" rel="stylesheet" />
 </head>
 <body>
-    <h1>Salarbehzadi, Laya Homework 7</h1>
-    <hr />
+    <h1>Laya Salarbehzadi's ASP.NET MVC Web Site in Windows Azure</h1>
+
     <nav>
         <ul>
-            <li class="links">@Html.ActionLink("Home", "Index")</li>
-            <li class="links">@Html.ActionLink("Web Form Demo", "WebForm")</li>
-            <li class="links">@Html.ActionLink("About Me", "AboutMe")</liclass>
+            <li>@Html.ActionLink("Home", "Index")</li>
+
+            <li>
+                @Html.ActionLink("Form/Layout Demo", "")
+            <ul>
+                <li>@Html.ActionLink("Web Form", "WebForm")</li>
+
+                <li>
+                    @Html.ActionLink("Layout Demo", "")
+                <ul>
+                    <li>@Html.ActionLink("Absolute Layout", "AbsoluteLayout")</li>
+                    <li>@Html.ActionLink("Static Layout", "StaticLayout")</li>
+                    <li>@Html.ActionLink("Float Layout", "FloatLayout")</li>
+                </ul>
+            </li>
         </ul>
-    </nav>
-    <div>
-        @RenderBody()
-    </div>
+    </li>
+
+    <li>@Html.ActionLink("ServerSide Demo", "Task3")</li>
+    <li>@Html.ActionLink("ClientSide Demo", "Task4")</li>
+    <li>@Html.ActionLink("Resume", "AboutMe")</li>
+</nav>
+<br />
+<div>
+    @RenderBody()
+</div>
+<footer>
+    <p> Laya Salarbehzadi &copy;</p>
+    <address>
+        <p><a href="mailto:layasb@yahoo.com">Email: layasb@yahoo.com</a></p>
+        <p>Phone: (310)800-4369</p>
+    </address>
+</footer>
 </body>
+
 </html>

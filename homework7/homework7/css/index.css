@@ -1,26 +1,28 @@
 body
 {
-    width:600px;
+    width:800px;
     margin:0 auto 30px auto;
+    background-color: #bef8ea;
+    font-family:'Kristen ITC';
+    font-size:14px;
 }
 
 h1
 {
     text-align: center;
-}
-hr
-{
-    height:8px;
-    background-color: #00FF00;
+    font-weight:bold;
 }
 nav
 {
-    margin:2em;
-    text-align:right;
+    margin-left:60px;
+    background-color: #fa43ad;
+    height: 20px;
+    margin-top:10px;
 }
 nav a
 {
-    margin:20px;
+    margin-right:20px;
+    margin-left:0px;
 }
 a:link
 {
@@ -28,54 +30,119 @@ a:link
 }
 a:hover
 {
-    color:red;
-    text-transform:uppercase;
+    color: #73eac2;
     text-decoration:underline;
 }
-h2, h3
+h2
 {
-    text-align:center;
+    margin-left: 100px;
     color:blue;
+     font-weight:bold;
 }
 h3
 {
     color: purple;
+    margin-left: 100px;
+     font-weight:bold;
+}
+.firstConternt 
+{
+    margin-left: 100px;
 }
 footer
 {
+
+    margin-left:60px;
     border-top: double;
     padding-top: 5px;
 }
 footer p
 {
+
     display:inline;
     margin-right:20px;
 }
 form
 {
+    margin-left:60px;
     border:solid green;
     padding: 10px;
 }
 .aboutMe
 { 
+     margin-left:0px;
     text-align:left;
     width:380px;
 }
 img
 {
-    width:200px;
-    height:200px;
+    width:230px;
+    height:250px;
     float:right;
+    border: solid 5px #fa43ad;
 }
 .left
 {
     width:380px;
+    margin-left:100px;
 }
 address
 {
     display:inline;
 }
-.links 
+.bottom
 {
-     display:inline;
+    margin-left:60px;
+}
+nav ul ul 
+{
+	display: none;
+}
+nav ul li:hover > ul 
+{
+		display: block;
+}
+nav ul
+{
+    padding-left:0px;
+    list-style: none;
+	display: inline;
+}
+nav ul li 
+{
+	float: left;
+}
+nav ul li:hover
+{
+
+}
+nav ul li a
+{
+    display: block; 
+    padding-right:20px; 
+	text-decoration: none;
+}
+nav ul ul 
+{
+    background-color: #73eac2;
+	position: absolute; 
+}
+nav ul ul li 
+{
+	float: none; 
+	position: relative;
+}
+nav ul ul li a 
+{
+    
+}
+nav ul ul li a:hover 
+{
+    color:#fa43ad;
+}
+nav ul ul ul 
+{
+	position: absolute; 
+    left: 100%; 
+    top:0;
 }
