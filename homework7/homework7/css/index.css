@@ -53,14 +53,8 @@ footer
 {
 
     margin-left:60px;
-    border-top: double;
     padding-top: 5px;
-}
-footer p
-{
-
-    display:inline;
-    margin-right:20px;
+    width:680px;
 }
 form
 {
@@ -145,4 +139,9 @@ nav ul ul ul
 	position: absolute; 
     left: 100%; 
     top:0;
+}
+#result
+{
+    margin-left:60px;
+    font-weight:bold;
 }
