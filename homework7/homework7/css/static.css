@@ -30,7 +30,7 @@ article
     width:452px;
     height:180px;
     text-align:center;
-    
+    margin-left: 60px;
     padding-bottom:10px;
 }
 section
@@ -48,6 +48,7 @@ aside
     background-color:cyan;
     height:180px;
     text-align:center;
+    margin-left: 60px;
 }
 footer
 {

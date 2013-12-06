@@ -70,30 +70,6 @@ namespace CourseProject.Controllers
         }
 
 
-        [HttpPost]
-        public ActionResult Task4(string inputString)
-        {
-            if (string.IsNullOrEmpty(inputString))
-            {
-                //shouldn't be possible anymore
-                return Content("invalid input, please try again");
-            }
-            else
-            {
-                string FinalString = stringReversal(inputString);
-                return View("textFormat", (object)FinalString);
-            }
-        }
-        private string stringReversal(string input)
-        {
-            string[] words = input.Split(' ');
-            string words2 = "";
-            for (int i = words.Length; i > 0; i -= 1)
-            {
-                words2 += (words[i - 1] + " ");
-            }
-            return words2;
-        }
         public ActionResult AboutMe()
         {
             return View();

@@ -1,19 +1,37 @@
-﻿@model string
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body>
+    <script>
+        function foo(){
+        var FirstString = document.formxml.inputString.value;
+        var reverse = FirstString.split(" ").reverse();
+        for (var i = 0; i < reverse.length; i++)
+        {
+            document.getElementById("result").innerHTML += reverse[i] + " ";
+        }
+            
+        
+        return false;
+        }
+    </script>
+    <br />
+      <form name="formxml" >
+            <label>
+                Please input a line of text:
+                <input type="text" name="inputString" id="inputString" value="" required="required" />
+            </label>
+    <input type="button" value="submit" onclick="return foo()" />
+    </form>
+    <div id="result">
+
+    </div>
+</body>
+</html>
 
 
-@{
-    ViewBag.Title = "Task4";
-}
-
-<br />
-@using (Html.BeginForm("Task4", "Home"))
-{
-    <label>
-        Please input a line of text:
-        <input type="text" name="inputString" id="inputString" value="" required="required" />
-    </label>
-    <input type="submit" name="submit" value="submit" />
-}
 <br />
 <br />
 

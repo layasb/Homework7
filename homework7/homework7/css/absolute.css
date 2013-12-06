@@ -30,6 +30,7 @@ article
     background-color:pink;
     width:452px;
     height:180px;
+    margin-left:60px;
     text-align:center;
     padding-bottom:10px;
 }
@@ -38,7 +39,7 @@ section
 
     background-color:red;
     margin-bottom:10px;
-
+    
     width:452px;
     height:70px;
 }
@@ -49,8 +50,9 @@ aside
     position:absolute;
     height:190px;
     text-align:center;
-    top:57px;
+    top:136px;
     left:452px;
+    margin-left:60px;
     
     
 }
