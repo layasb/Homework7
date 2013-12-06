@@ -48,6 +48,7 @@ h3
 .firstConternt 
 {
     margin-left: 100px;
+    line-height:25px;
 }
 footer
 {
@@ -144,4 +145,8 @@ nav ul ul ul
 {
     margin-left:60px;
     font-weight:bold;
+}
+.layouts
+{
+    margin-left:30px;
 }
