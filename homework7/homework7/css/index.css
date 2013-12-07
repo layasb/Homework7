@@ -143,8 +143,10 @@ nav ul ul ul
 }
 #result
 {
-    margin-left:60px;
+    margin-left:100px;
     font-weight:bold;
+    color:purple;
+    font-size: 20px;
 }
 .layouts
 {
